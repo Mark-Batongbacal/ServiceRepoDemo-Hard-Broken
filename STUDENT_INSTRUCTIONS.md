@@ -62,3 +62,19 @@ become visible after you fix another one, so re-test after every change.
 - Test the edge cases: names with spaces, duplicate names, editing without changing the
   name, stock of 0 vs. 1, refreshing a page after saving.
 - For each bug you fix, write down the file, what was wrong, the symptom, and your fix.
+
+
+## ERRORS
+1. Added await in SaveChangesAsync found in updateasync under productservice
+2. Added Delete in  ProductService
+3. Added Delete in IProductService
+4. Removed Created at in updateasync
+5. Changed from EntityState.Detached to Remove in ProductRepository
+6. Removed _context in ProductsController DI
+7. Removed _context use in all the functions in ProductsController1. Added await in SaveChangesAsync found in updateasync under productservice
+2. Added Delete in  ProductService
+3. Added Delete in IProductService
+4. Removed Created at in updateasync
+5. Changed from EntityState.Detached to Remove in ProductRepository
+6. Removed _context in ProductsController DI
+7. Removed _context use in all the functions in ProductsController
