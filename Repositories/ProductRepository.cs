@@ -26,11 +26,10 @@ public class ProductRepository : IProductRepository
         _context.Products.Update(product);
 
     public void Delete(Product product) =>
-        _context.Entry(product).State = EntityState.Detached;
+        _context.Products.Remove(product);
 
     public async Task SaveChangesAsync()
     {
-        _context.ChangeTracker.Clear();
         await _context.SaveChangesAsync();
     }
 }
